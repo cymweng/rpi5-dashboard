@@ -1,42 +1,80 @@
-@import "@fontsource/inter/400.css";
-@import "@fontsource/inter/500.css";
-@import "@fontsource/inter/600.css";
-@import "@fontsource/inter/700.css";
+.dashboard{
+    width:100vw;
+    height:100vh;
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    display:flex;
+    flex-direction:column;
+
+    padding:24px;
+    box-sizing:border-box;
 }
 
-html,
-body,
-#root {
-  width: 100%;
-  height: 100%;
+.topBar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
 }
 
-body {
-  font-family: "Inter", sans-serif;
-  background: #0d0d0d;
-  color: #ffffff;
-  overflow: hidden;
+.musicSection{
+    flex:1;
 
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    display:flex;
+    align-items:center;
+    gap:40px;
 }
 
-button,
-input {
-  font-family: inherit;
+.albumArt{
+    width:180px;
+    height:180px;
+
+    background:#222;
+
+    border-radius:22px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    color:#888;
 }
 
-img {
-  user-select: none;
-  -webkit-user-drag: none;
+.musicPlayer{
+    flex:1;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.progress{
+    height:10px;
+    background:#333;
+    border-radius:100px;
+    margin-top:20px;
+}
+
+.fill{
+    width:55%;
+    height:100%;
+
+    background:white;
+
+    border-radius:100px;
+}
+
+.times{
+    display:flex;
+    justify-content:space-between;
+
+    color:#777;
+
+    margin-top:12px;
+}
+
+.statusBar{
+    display:flex;
+
+    justify-content:space-between;
+
+    border-top:1px solid #222;
+
+    padding-top:18px;
+
+    color:#999;
 }
