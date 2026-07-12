@@ -19,3 +19,10 @@ function App() {
 }
 
 export default App;
+
+Clock.jsx
+Weather.jsx
+MusicPlayer.jsx
+AlbumArt.jsx
+StatusBar.jsx
+ProgressBar.jsx
